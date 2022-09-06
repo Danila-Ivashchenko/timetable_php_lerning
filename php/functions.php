@@ -7,4 +7,9 @@ function defuse($conn, $str){
 		$new_str = stripslashes($new_str);
 	return $new_str;
 }
+
+function get_filename($file){
+	$arr = explode('\\', $file);
+	return $arr[count($arr) - 1];
+}
 ?>
